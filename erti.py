@@ -4,7 +4,7 @@ summa = float(input('Введите сумму:'))
 for procent in stavka:
     deposit = (round(procent / 100 * summa))
     print('Вы заработаете:', deposit)
-for per_cent in stavka:
-    max_stav = max(stavka)
-    max_deposit = (round(max_stav / 100 * summa))
-    print('Максимальная сумма', max_deposit)
+stav = list(stavka)
+max_stav = float(max(stav))
+print('Вы заработаете максимум:', max_stav * summa / 100)
+
